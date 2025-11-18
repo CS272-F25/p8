@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0" />
+        <link rel = stylesheet href = "styles.css" />
+        <title>Home</title>
+    </head>
+    <body>
+        <header>
+            <h1>Secret Santa Matcher</h1>
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "aboutus.html">About Us</a></li>
+                    <li><a href = "giftIdeas.html">Gift Ideas</a></li>
+                    <li><a href = "generateMatch.html">Match Me</a></li>
+                    <li><a href = "results.html">Your Results</a></li>
+                    <li><a href = "savenger.html">Present Hunt</a></li>
+                    <li><a href = "contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Happy Holiday!</h2>
+            <h3>Make your Secret Santa's gift exchange simple and fun!</h3>
+            <p>Welcome to the Secret Santa Matcher, a fun and easy way for college students to organize holiday gift exchanges. Whether it's for your dorm, student organization, classes, or just a group of friends, our site helps you quickly gather participants, create random pairings, and bring your campus community together for some festive fun!</p>
+        </main>
+
+        <section>
+            <h2>How It Works</h2>
+            <ol>
+                <li>Sign up and enter your information.</li>
+                <li>Set a budget and any gift preferences or restrictions.</li>
+                <li>Click "Generate Matches" to randomly pair participants.</li>
+                <li>Participants will receive an email with their assigned Secret Santa recipient.</li>
+                <li>Hide your presents and look for your own Secret Santa's present</li>
+                <li>Enjoy the gift exchange and spread holiday cheer!</li>
+        </section>
+
+        <section>
+            <h2>Click Here to Get Started!</h2>
+            <a href="generateMatch.html"><button>Generate Matches</button></a>
+        </section>
+
+        <footer>
+            <Span><script type="text/JavaScript">document.write(new Date().getFullYear());</script></Span>
+            COMPSCI/LIS 472, Group Project. All Rights Reserved.
+            <br>
+            <br>
+            Lance Munson | Manato Ogawa | Rachel Ren | Hani Sulieman
+        </footer>
+    </body>
+</html>
