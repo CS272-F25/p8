@@ -1,0 +1,21 @@
+h1, h2, h3, p, li, footer {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #bee9e8;
+}
+
+.navbar {
+    background-color: rgb(15, 3, 48);
+    padding: 10px;
+}
+
+a {
+    color: #bee9e8;
+}
+
+a:hover {
+    color: #1b4965;
+    text-decoration: none;
+}
