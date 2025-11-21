@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Madison Campus Scavenger Hunt – Play</title>
+  <title>Secret Santa Matcher – Present Hunt</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap (design library) -->
@@ -27,27 +27,26 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- HEADER -->
   <header>
-    <nav class="navbar" aria-label="Main navigation">
-      <div class="container d-flex justify-content-between align-items-center">
-        <a href="index.html" class="navbar-brand fw-bold text-decoration-none">
-          Madison Scavenger Hunt
-        </a>
-        <div>
-          <a href="scavenger.html" class="me-3 text-decoration-none">Play</a>
-          <a href="about.html" class="text-decoration-none">About</a>
-        </div>
+    <h1>Secret Santa Matcher</h1>
+    <nav role="navigation" class="navbar">
+      <div class="container-fluid">
+        <a href="index.html">Home</a>
+        <a href="generateMatch.html">Match Me</a>
+        <a href="scavenger.html">Present Hunt</a>
       </div>
     </nav>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="container mb-5 mt-4">
     <!-- Map section -->
     <section aria-labelledby="map-heading" class="mb-4">
-      <h1 class="h2 mb-3" id="map-heading">Campus Map</h1>
+      <h2 class="h3 mb-3" id="map-heading">Campus Map</h2>
       <p>
-        Solve the riddle and guess the location. When you are correct,
-        the map will zoom to the hotspot on campus.
+        Read the riddle below, guess the location, and see if you’re right.
+        When you solve it, the map will zoom to the correct hotspot on campus.
       </p>
       <div id="map" role="img" aria-label="Map of Madison campus"></div>
     </section>
@@ -95,9 +94,10 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p class="mb-0 small">
-      Built for CS 272 – Madison Campus Scavenger Hunt Riddle Game.
+      &copy; 2025 Secret Santa Matcher – Present Hunt.
     </p>
   </footer>
 
@@ -107,7 +107,7 @@
     crossorigin="anonymous"
   ></script>
 
-  <!-- App script -->
+  <!-- Game / map logic -->
   <script src="script.js"></script>
 </body>
 </html>

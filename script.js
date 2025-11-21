@@ -4,48 +4,128 @@ const markersById = {};
 
 // Campus hotspots with riddles.
 // Each riddle is "near" a well-known UW–Madison location.
+// All the places the riddles can point to
 const hotspotData = [
   {
-    id: "memorial_union",
-    name: "Memorial Union Terrace",
-    coords: [43.0766, -89.3985],
-    riddle:
-      "Colorful chairs face the water here. Students eat ice cream and watch the sunset over Lake Mendota. What lakeside hangout is this?",
-    answers: ["memorial union", "memorial union terrace", "the terrace"],
+    id: 'memorial_union',
+    name: 'Memorial Union',
+    coords: [43.07625, -89.40006],
+    riddle: 'Bright sunburst chairs, ice cream by the lake, and live music on warm nights. Which lakeside hangout is this?',
+    acceptedAnswers: [
+      'memorial union',
+      'the union',
+      'union',
+      'memorial union terrace',
+      'terrace'
+    ]
   },
   {
-    id: "bascom_hill",
-    name: "Bascom Hill",
-    coords: [43.0753, -89.4042],
-    riddle:
-      "Climb this steep green slope to find a seated president watching over campus. What famous hill is this near the top of campus?",
-    answers: ["bascom hill", "bascom"],
+    id: 'bascom_hill',
+    name: 'Bascom Hill',
+    coords: [43.0753, -89.4034],
+    riddle: 'You climb me for class and sled down me in winter. Abe Lincoln watches from the top. Where are you?',
+    acceptedAnswers: [
+      'bascom hill',
+      'bascom',
+      'bascom hall',
+      'the hill'
+    ]
   },
   {
-    id: "camp_randall",
-    name: "Camp Randall Stadium",
-    coords: [43.0699, -89.4127],
-    riddle:
-      "On fall Saturdays, thousands jump around here in red and white. What stadium near Regent Street is this?",
-    answers: ["camp randall", "camp randall stadium"],
+    id: 'union_south',
+    name: 'Union South',
+    coords: [43.0713, -89.4073],
+    riddle: 'I’m the newer union with bowling, concerts, and late-night food, closer to Camp Randall than the lake. What building am I?',
+    acceptedAnswers: [
+      'union south',
+      'south union'
+    ]
   },
   {
-    id: "college_library",
-    name: "College Library",
-    coords: [43.0716, -89.4019],
-    riddle:
-      "Open late and right next to Lake Street, this library is packed during midterms. What study spot near the southeast dorms is this?",
-    answers: ["college library"],
+    id: 'college_library',
+    name: 'College Library (Helen C. White)',
+    coords: [43.0762, -89.3985],
+    riddle: 'Open late for cramming, I live inside a tall lakeshore building on N. Park Street. Which library is this?',
+    acceptedAnswers: [
+      'college library',
+      'helen c white',
+      'helen c. white',
+      'helen c white hall'
+    ]
   },
   {
-    id: "union_south",
-    name: "Union South",
-    coords: [43.0719, -89.4076],
-    riddle:
-      "You can bowl, watch movies, or grab food here, just across from engineering buildings. What modern union is this on the south side of campus?",
-    answers: ["union south"],
+    id: 'camp_randall',
+    name: 'Camp Randall Stadium',
+    coords: [43.0699962, -89.4126194],
+    riddle: 'On game day I shake when everyone “Jump Arounds.” What famous stadium is this?',
+    acceptedAnswers: [
+      'camp randall',
+      'camp randall stadium',
+      'the stadium'
+    ]
   },
+
+  // NEW: dining halls, dorms, teaching halls
+
+  {
+    id: 'gordon_dining',
+    name: 'Gordon Avenue Market (Gordon Dining & Event Center)',
+    coords: [43.0715, -89.4000],
+    riddle: 'So many food stations in one giant hall by the Kohl Center. You swipe in hungry and leave in a food coma. Which dining hall is this?',
+    acceptedAnswers: [
+      'gordon',
+      'gordon dining',
+      'gordon avenue market',
+      'gordon dining and event center',
+      'gordon dining & event center'
+    ]
+  },
+  {
+    id: 'dejope',
+    name: 'Dejope Residence Hall',
+    coords: [43.077791, -89.417511],
+    riddle: 'My name means “four lakes,” I overlook Mendota, and I’m home to Four Lakes Market. Which lakeshore dorm is this?',
+    acceptedAnswers: [
+      'dejope',
+      'dejope residence hall',
+      'dejope hall'
+    ]
+  },
+  {
+    id: 'ogg',
+    name: 'Ogg Residence Hall',
+    coords: [43.070549, -89.399936],
+    riddle: 'I’m a tall Southeast dorm on Dayton Street, right across from Gordon and close to State Street. Which hall am I?',
+    acceptedAnswers: [
+      'ogg',
+      'ogg hall',
+      'ogg residence hall'
+    ]
+  },
+  {
+    id: 'grainger',
+    name: 'Grainger Hall (Business School)',
+    coords: [43.072697, -89.401463],
+    riddle: 'Group projects, case competitions, and Business Badgers everywhere. I’m the home of the business school on University Avenue. Where are you?',
+    acceptedAnswers: [
+      'grainger',
+      'grainger hall',
+      'school of business',
+      'wisconsin school of business'
+    ]
+  },
+  {
+    id: 'van_vleck',
+    name: 'Van Vleck Hall',
+    coords: [43.074975, -89.403831],
+    riddle: 'Many a calc exam has been taken in my classrooms on Bascom Hill. I’m the concrete tower of math. What building is this?',
+    acceptedAnswers: [
+      'van vleck',
+      'van vleck hall'
+    ]
+  }
 ];
+
 
 // Initialize the Leaflet map and add hotspot markers
 function initMap() {
