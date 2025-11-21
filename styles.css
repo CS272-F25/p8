@@ -37,3 +37,78 @@ footer {
     align-items: center;
     width: 20rem;
 }
+
+/* Typography + base styles */
+h1, h2, h3, p, li, footer {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: #bee9e8;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgb(15, 3, 48);
+  padding: 10px;
+}
+
+.navbar-brand {
+  color: #bee9e8;
+}
+
+.navbar a {
+  color: #bee9e8;
+}
+
+a {
+  color: #bee9e8;
+}
+
+a:hover {
+  color: #1b4965;
+  text-decoration: none;
+}
+
+/* Map container: MUST have a height */
+#map {
+  width: 100%;
+  height: 420px;
+  border-radius: 0.5rem;
+  border: 2px solid #1b4965;
+  margin-bottom: 1rem;
+}
+
+/* Present list items */
+#present-list li {
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: #A8EAA2;
+}
+
+/* Centering helper if you use #match on another page */
+#match {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card width as requested */
+.card {
+  align-items: center;
+  width: 20rem;
+  margin: 0 auto; /* center card in its container */
+}
+
+/* Accessibility: clear focus outlines */
+:focus-visible {
+  outline: 3px solid #ffbf00;
+  outline-offset: 2px;
+}
