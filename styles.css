@@ -1,4 +1,4 @@
-h1, h2, h3, p, li, footer {
+h1, h2, h3, p, li, footer, label {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -64,6 +64,7 @@ body {
 
 a {
   color: #bee9e8;
+  text-decoration: none;
 }
 
 a:hover {
@@ -111,4 +112,13 @@ footer {
 :focus-visible {
   outline: 3px solid #ffbf00;
   outline-offset: 2px;
+}
+
+label {
+  font-size: x-large;
+}
+
+.form-group{
+  padding-top: 1.15rem;
+  padding-bottom: 1.15rem;
 }
