@@ -3,20 +3,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
     <title>Matching</title>
+    <script src="findMatch.js"></script>
+    <script src="participants.js"></script>
 </head>
 <body>
      <header>
             <h1>Matching</h1>
-            <nav role="navigation" class="navbar">
+             <nav role="navigation" class="navbar">
                 <div class="container-fluid">
                     <a href = "index.html">Home</a>
-                    <a href = "aboutus.html">About Us</a>
-                    <a href = "giftIdeas.html">Gift Ideas</a>
+                    <a href = "register.html">Register</a>
                     <a href = "generateMatch.html">Match Me</a>
-                    <a href = "results.html">Your Results</a>
-                    <a href = "savenger.html">Present Hunt</a>
+                    <a href = "giftIdeas.html">Gift Ideas</a>
+                    <a href = "scavenger.html">Present Hunt</a>
+                    <a href = "aboutus.html">About Us</a>
                     <a href = "contact.html">Contact Us</a>
                 </div>
             </nav>
         </header>
+        <p>Press the button below to find your match!</p>
+        <button id="matchButton" class="btn" onclick="printParticipants()">Match</button>
+
+        <nav id="match"></nav>
 </body>
