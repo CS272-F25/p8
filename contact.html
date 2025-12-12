@@ -22,5 +22,42 @@
                 </div>
             </nav>
         </header>
+
+        <main>
+            <h2>Get in Touch with the Secret Santa Team!</h2> <!-- Title for the Contact Section -->
+            <h4>Have questions, need help, or want to share feedback? We'd love to hear from you. Please fill out the form below to reach us.</h4>
+
+            <form id="contact-form">
+                <label for="name">Name*</label><br />
+                <input type="text" id="name" name="name" required /><br /><br />
+
+                <label for="email">Email*</label><br />
+                <input type="email" id="email" name="email" required /><br /><br />
+
+                <label for="subject">Subject</label><br />
+                <select id="subject" name="subject">
+                <option value="general">General Question</option>
+                <option value="issue">Report an Issue</option>
+                <option value="feature">Feature Request</option>
+                <option value="feedback">Feedback</option>
+                </select>
+                <br /><br />
+
+                <label for="message">Message*</label><br />
+                <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+                <button type="submit">Send Message</button>
+
+                <p id="form-status"></p>
+            </form>
+        </main>
+
+        <footer>
+            &copy;<Span><script type="text/JavaScript">document.write(new Date().getFullYear());</script></Span>
+            COMPSCI/LIS 472 Group Project. All Rights Reserved.
+            <br>
+            <br>
+            Lance Munson | Manato Ogawa | Rachel Ren | Hani Sulieman
+        </footer>
     </body>
 </html>
