@@ -1,9 +1,6 @@
-h1{
-  font-family: "Brush Script MT", "Segoe Script", "Comic Sans MS", cursive;
-}
-h2, h3, p, li, footer, label {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+/* h1, h2, h3, p, li, footer, label { */
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+/* } */
 
 header{
   background-color:#A8Eaa2
@@ -11,6 +8,7 @@ header{
 
 body {
     background-color: #bee9e8;
+    margin: 0;
 }
 
 .navbar {
@@ -52,12 +50,12 @@ h1, h2, h3, p, li, footer {
 
 body {
   background-color: #bee9e8;
-  margin: 0;
+  
 }
 
 /* Navbar */
 .navbar {
-  background-color: rgb(15, 3, 48);
+  background-color: rgb(15, 3, 48)\;
   padding: 10px;
 }
 
@@ -145,4 +143,19 @@ label {
 
 .curl.right {
   transform: scaleX(-1);
+}
+
+/*Font Imports and Assignments*/
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+h2, h3 {
+  font-family: 'Trocchi', serif;
+  font-weight: bold;
+}
+
+p, li, label {
+  font-family: 'Roboto', Arial, sans-serif;
+  
 }
