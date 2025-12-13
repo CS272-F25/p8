@@ -1,5 +1,12 @@
-h1, h2, h3, p, li, footer, label {
+h1{
+  font-family: "Brush Script MT", "Segoe Script", "Comic Sans MS", cursive;
+}
+h2, h3, p, li, footer, label {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+  background-color:#A8Eaa2
 }
 
 body {
@@ -121,4 +128,21 @@ label {
 .form-group{
   padding-top: 1.15rem;
   padding-bottom: 1.15rem;
+}
+
+/* heading decorations for home page*/
+.heading-wrapper { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.curl {
+  width: 15rem;
+  opacity: 0.9;
+}
+
+.curl.right {
+  transform: scaleX(-1);
 }
