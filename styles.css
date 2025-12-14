@@ -1,13 +1,18 @@
-h1, h2, h3, p, li, footer, label, button {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* h1, h2, h3, p, li, footer, label { */
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+/* } */
+
+header{
+  background-color:#A8Eaa2
 }
 
 body {
     background-color: #bee9e8;
+    margin: 0;
 }
 
 .navbar {
-    background-color: #0f0330;
+    background-color: #0f0330; 
     padding: 10px;
 }
 
@@ -45,12 +50,12 @@ h1, h2, h3, p, li, footer {
 
 body {
   background-color: #bee9e8;
-  margin: 0;
+  
 }
 
 /* Navbar */
 .navbar {
-  background-color: #0f0330;
+  background-color: rgb(15, 3, 48);
   padding: 10px;
 }
 
@@ -119,12 +124,38 @@ label {
 }
 
 .form-group{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.15rem;
+  padding-bottom: 1.15rem;
 }
 
-#registerButton{
-  margin-bottom: 1rem;
-  color: #bee9e8;
-  background-color: #0f0330;
+/* heading decorations for home page*/
+.heading-wrapper { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.curl {
+  width: 15rem;
+  opacity: 0.9;
+}
+
+.curl.right {
+  transform: scaleX(-1);
+}
+
+/*Font Imports and Assignments*/
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+h2, h3{
+  font-family: 'Trocchi', serif;
+  font-weight: bold;
+}
+
+p, li, label {
+  font-family: 'Roboto', Arial, sans-serif;
+  
 }
