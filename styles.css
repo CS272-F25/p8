@@ -1,4 +1,4 @@
-h1, h2, h3, p, li, footer, label {
+h1, h2, h3, p, li, footer, label, button {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -50,7 +50,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: rgb(15, 3, 48);
+  background-color: #0f0330;
   padding: 10px;
 }
 
@@ -119,6 +119,12 @@ label {
 }
 
 .form-group{
-  padding-top: 1.15rem;
-  padding-bottom: 1.15rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#registerButton{
+  margin-bottom: 1rem;
+  color: #bee9e8;
+  background-color: #0f0330;
 }
