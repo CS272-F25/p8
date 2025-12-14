@@ -29,8 +29,9 @@
         </header>
 
         <main>
+            <img src = "images/santa_and_snowman.png" alt = "Santa and snowman being buddies and waving hi" class = "float-right">
             <h2>Get in Touch with the Secret Santa Team!</h2> <!-- Title for the Contact Section -->
-            <p>Have questions, need help, or want to share feedback? We'd love to hear from you. Please fill out the form below to reach us.</p>
+            <h4>Have questions, need help, or want to share feedback? We'd love to hear from you. Please fill out the form below to reach us.</h4>
 
             <form id="contact-form">
                 <label for="name">Name*</label><br />
@@ -55,7 +56,58 @@
 
                 <p id="form-status"></p>
             </form>
+            <img src = "images/sparkles.png" alt = "sparkles decoration" class = "float-right">
         </main>
+
+        <!-- FAQ Section -->
+        <h2 class="text-center mb-3">Frequently Asked Questions</h2>
+            <div id="faqAccordion" class="accordion">
+                <div class="card">
+                      <div class="card-header" id="faq1">
+                        <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    What if I forget my login?
+                        </button>
+                        </h5>
+                </div>
+            <div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent="#faqAccordion">
+                <div class="card-body">
+                    You can reset your password by clicking “Forgot Password” on the login page and following the instructions.
+                </div>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="faq2">
+                    <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    Can I change my gift preferences after registering?
+                    </button>
+                    </h5>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Yes! Just log in and update your preferences before the match generation date.
+                    </div>
+                </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="faq3">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    How do I know who my Secret Santa is?
+                </button>
+            </h5>
+        </div>
+        <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+            <div class="card-body">
+                After matches are generated, participants will receive an email notification with their assigned recipient.
+            </div>
+        </div>
+    </div>
+</div>
+        
 
         <footer>
             &copy;<Span><script type="text/JavaScript">document.write(new Date().getFullYear());</script></Span>
