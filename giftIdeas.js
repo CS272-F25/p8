@@ -1,72 +1,60 @@
-"use strict";
+const API_URL = "https://dummyjson.com/products";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("searchForm");
-  const resultsDiv = document.getElementById("results");
+const productsDiv = document.getElementById("products");
+const categorySelect = document.getElementById("category");
 
-  // Placeholder when Etsy approved thier API access
-  const API_KEY = "YOUR_API_KEY";
+let allProducts = [];
 
-  form.addEventListener("submit", handleSearch);
+// Fetch products
+fetch(API_URL)
+  .then(res => res.json())
+  .then(data => {
+    allProducts = data.products; // ✅ DummyJSON structure
+    displayProducts(allProducts);
+    loadCategories(allProducts);
+  })
+  .catch(err => {
+    console.error(err);
+    productsDiv.innerHTML = "<p>Unable to load gift ideas.</p>";
+  });
 
-  async function handleSearch(event) {
-    event.preventDefault();
+// Display products
+function displayProducts(products) {
+  productsDiv.innerHTML = "";
 
-    const keyword = document.getElementById("keyword").value;
-    const budget = document.getElementById("budget").value;
+  products.forEach(product => {
+    const card = document.createElement("div");
 
-    resultsDiv.textContent = "Finding Secret Santa gift ideas...";
+    card.innerHTML = `
+      <h3>${product.title}</h3>
+      <img src="${product.thumbnail}" alt="${product.title}" width="150">
+      <p><strong>Price:</strong> $${product.price}</p>
+      <p>${product.description}</p>
+    `;
 
-    try {
-      const response = await fetch(
-        `https://api.example.com/gifts?query=${encodeURIComponent(keyword)}`
-      );
+    productsDiv.appendChild(card);
+  });
+}
 
-      if (!response.ok) {
-        throw new Error("Gift API request failed");
-      }
+// Load categories
+function loadCategories(products) {
+  const categories = [...new Set(products.map(p => p.category))];
 
-      const data = await response.json();
+  categories.forEach(cat => {
+    const option = document.createElement("option");
+    option.value = cat;
+    option.textContent = cat;
+    categorySelect.appendChild(option);
+  });
+}
 
-      let gifts = data.results;
+// Filter by category
+categorySelect.addEventListener("change", () => {
+  const selected = categorySelect.value;
 
-      // Budget filtering
-      if (budget !== "") {
-        gifts = gifts.filter(gift => gift.price <= budget);
-      }
-
-      displayResults(gifts);
-    } catch (error) {
-      console.error(error);
-      resultsDiv.textContent = "Unable to load gift ideas.";
-    }
-  }
-
-  function displayResults(gifts) {
-    resultsDiv.innerHTML = "";
-
-    if (!gifts || gifts.length === 0) {
-      resultsDiv.textContent = "No gift ideas found.";
-      return;
-    }
-
-    gifts.slice(0, 5).forEach(gift => {
-      const giftDiv = document.createElement("div");
-
-      const title = document.createElement("h3");
-      title.textContent = gift.name;
-
-      const description = document.createElement("p");
-      description.textContent = gift.description;
-
-      const price = document.createElement("p");
-      price.textContent = `Estimated price: $${gift.price}`;
-
-      giftDiv.appendChild(title);
-      giftDiv.appendChild(description);
-      giftDiv.appendChild(price);
-
-      resultsDiv.appendChild(giftDiv);
-    });
+  if (selected === "all") {
+    displayProducts(allProducts);
+  } else {
+    displayProducts(allProducts.filter(p => p.category === selected));
   }
 });
