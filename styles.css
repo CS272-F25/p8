@@ -3,7 +3,8 @@
 /* } */
 
 header{
-  background-color:#A8Eaa2
+  background-color:#A8Eaa2;
+  width:100%
 }
 
 body {
@@ -128,22 +129,32 @@ label {
   padding-bottom: 1.15rem;
 }
 
-/* heading decorations for home page*/
-.heading-wrapper { 
+
+/* Heading wrapper layout */
+.heading-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
+/* Default curl size (gold curls) */
 .curl {
-  width: 15rem;
+  width: 13rem;
+  opacity: 0.85;
+}
+
+/* Holly as a smaller accent */
+.holly {
+  width: 8rem;
   opacity: 0.9;
 }
 
+/*mirror right-side decorations */
 .curl.right {
   transform: scaleX(-1);
 }
+
 
 /*Font Imports and Assignments*/
 h1 {
@@ -159,3 +170,4 @@ p, li, label {
   font-family: 'Roboto', Arial, sans-serif;
   
 }
+

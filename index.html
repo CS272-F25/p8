@@ -6,14 +6,19 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Trocchi&family=Roboto&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href = "styles.css" />
-        <title>Home</title>
+        <link rel = "stylesheet" href = "home.css"/>
+        <!-- <title>Home</title> -->
 </head>
     <body>
         <header>
-            <div class = "heading-wrapper">
+           <div class="heading-wrapper">
+                <img src="images/holly.png" class="curl holly left" alt="holly decoration for headings">
                 <img src="images/goldencurls.png" class="curl left" alt="golden curls decorations for headings">
-                    <h1>Secret Santa Matcher</h1>
+
+                     <h1>Secret Santa Matcher</h1>
+
                 <img src="images/goldencurls.png" class="curl right" alt="golden curls decorations for headings">
+                <img src="images/holly.png" class="curl holly right" alt="holly decoration for headings">
             </div>
             <nav role="navigation" class="navbar">
                 <div class="container-fluid">
@@ -28,7 +33,7 @@
             </nav>
         </header>
         <main>
-            <img src = "images/santaheartsign.png" alt = "Santa holding a heart sign" class="float-left">
+            <img src = "images/santaheartsign.png" alt = "Santa holding a heart sign" class="float-right">
             <h2>Happy Holiday!</h2>
             <h4>Make Your Secret Santa's Gift Exchange Simple and Fun!</h4> <!-- Welcoming the users with a friendly message -->
             <p>Welcome to the Secret Santa Matcher, a fun and easy way for college students to organize holiday gift exchanges. Whether it's for your dorm, student organization, classes, or just a group of friends, our site helps you quickly gather participants, create random pairings, and bring your campus community together for some festive fun!</p>
@@ -36,7 +41,7 @@
 
         <section>
             <h2>How It Works</h2>
-            <img src = "images/cuteanimal.png" alt = "cute animal holding a christmas tree while smiling" class = "float-right">
+            <img src = "images/cuteanimal.png" alt = "cute animal holding a christmas tree while smiling" class = "float-left" style="width: 200px; margin-right: 3rem;">
             <ul>
                 <li>Register and enter your information.</li>  <!-- Brief Overview of How It Works -->
                 <li>Set a budget and any gift preferences or restrictions.</li>
@@ -49,18 +54,20 @@
 
         <section>
             <h2>Click Here to Get Started!</h2>
-            <a href="register.html" class="btn btn-primary">Register</a>
-
+            <div class = "text-center">
+                <a href="register.html" class="btn btn-primary" class = "text-center">Register</a>
+            </div>
         </section>
+        
+        <img src = "images/musicguy.png" alt = "cartoon character listening to music while holding a phone" class = "float-right" style = "width: 200px; margin-right: 3rem">
 
         <section id="holiday-song-section">
             <h2>Christmas Song of the Day</h2> <!-- Recommends Christmas songs to users -->
 
-            <blockquote>
+            <blockquote class = "text-center">
                 <p id="song-title">Loading song...</p>
                 <span id="song-artist"></span>
             </blockquote>
-            <img src = "images/musicguy.png" alt = "cartoon character listening to music while holding a phone" class = "float-left">
             <br>
         </section>
 
