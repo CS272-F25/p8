@@ -174,6 +174,7 @@ p, li, label {
   margin-bottom: 0.5rem; /* smaller gap */
 }
 
+<<<<<<< HEAD
 .contact-intro p {
   margin-top: 0;
 }
@@ -197,3 +198,34 @@ p, li, label {
   width: 100%;                /* fill the card */
   padding: 1rem 1.25rem;
 }
+=======
+/* Footer styling */
+.site-footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 12px;
+  border-top: 1px solid #ccc;
+  font-size: 0.85rem;
+}
+
+/* Map must have height */
+#map {
+  width: 100%;
+  min-height: 380px;
+}
+
+.scavenger-text {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push footer to bottom */
+main {
+  flex: 1;
+}
+>>>>>>> d9315bfbba46fa638c3ac1233736ca6dd5f291b9
