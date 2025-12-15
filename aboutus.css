@@ -1,0 +1,47 @@
+main {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+/* ===== IMAGES ===== */
+.float-left {
+  float: left;
+  max-width: 220px;
+  margin: 0 1.5rem 1rem 0;
+}
+
+.float-right {
+  float: right;
+  max-width: 200px;
+  margin: 0 0 1rem 1.5rem;
+}
+
+/* Clear floats inside sections */
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ===== TEAM SECTION ===== */
+section:nth-of-type(2) article {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+section:nth-of-type(2) ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+section:nth-of-type(2) li {
+  margin-bottom: 0.4rem;
+  font-family: "Roboto", sans-serif;
+}

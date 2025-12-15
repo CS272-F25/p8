@@ -30,5 +30,5 @@ const index = dayOfYear % songs.length;
 const songOfTheDay = songs[index];
 
 // Insert into HTML
-document.getElementById("song-title").textContent = songOfTheDay.title;
+document.getElementById("song-title").textContent = `"${songOfTheDay.title}"`;
 document.getElementById("song-artist").textContent = `— ${songOfTheDay.artist}`;
