@@ -297,7 +297,7 @@ const hotspotData = [
   {
     id: 'lake_mendota',
     name: 'Lake Mendota',
-    coords: [43.0917, -89.4092],
+    coords: [43.10850563939696, -89.41823833292923],
     riddle: 'Frozen walks in winter, sunsets in summer, and lakeshore paths near Dejope. Which lake is this?',
     acceptedAnswers: [
       'lake mendota',
@@ -326,6 +326,28 @@ const hotspotData = [
       'bakke recreation center',
       'bakke wellbeing center',
       'bakke recreation and wellbeing center'
+    ]
+  },
+  {
+    id: 'lake_monona',
+    name: 'Lake Monona',
+    coords: [43.06795014295759, -89.36124675789155],
+    riddle: 'A scenic lake south of campus with bike paths, sunsets, and views of the Capitol across the water. Which lake is this?',
+    acceptedAnswers: [
+      'lake monona',
+      'monona'
+    ]
+  },
+  {
+    id: 'dane_county_airport',
+    name: 'Dane County Regional Airport (MSN)',
+    coords: [43.1399, -89.3375],
+    riddle: 'Madison’s main airport north of the city, where students fly home for breaks and study abroad. What airport is this?',
+    acceptedAnswers: [
+      'dane county airport',
+      'dane county regional airport',
+      'msn airport',
+      'msn'
     ]
   }
 ];

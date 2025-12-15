@@ -171,3 +171,32 @@ p, li, label {
   
 }
 
+/* Footer styling */
+.site-footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 12px;
+  border-top: 1px solid #ccc;
+  font-size: 0.85rem;
+}
+
+/* Map must have height */
+#map {
+  width: 100%;
+  min-height: 380px;
+}
+
+.scavenger-text {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push footer to bottom */
+main {
+  flex: 1;
+}
