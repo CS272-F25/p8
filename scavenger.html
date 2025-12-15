@@ -26,6 +26,24 @@
   <!-- Global stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+<div class="modal fade" id="successModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">🎁 Present Found!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p id="present-text"></p>
+      </div>
+      <div class="modal-footer">
+        <button id="continue-btn" class="btn btn-primary">
+          Continue
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 <body>
   <!-- HEADER -->
   <header>
@@ -51,7 +69,7 @@
   <main class="container mb-5 mt-4">
     <!-- Map section -->
     <section aria-labelledby="map-heading" class="mb-4">
-      <h2 class="h3 mb-3" id="map-heading">Campus Map</h2>
+      <h1 class="h3 mb-3" id="map-heading">Campus Map</h1>
       <p>
         Read the riddle below, guess the location, and see if you’re right.
         When you solve it, the map will zoom to the correct hotspot on campus.
@@ -61,7 +79,7 @@
 
     <!-- Single-riddle game section -->
     <section aria-labelledby="riddle-heading" class="mb-4">
-      <h2 id="riddle-heading" class="h4 mb-3">Guess the Location</h2>
+      <h1 id="riddle-heading" class="h4 mb-3">Guess the Location</h1>
 
       <div class="card shadow-sm">
         <div class="card-body">
