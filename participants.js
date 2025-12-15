@@ -38,9 +38,11 @@ function setParticipants(){
 
 function addParticipant(name, email, phone){
   if(localStorage.getItem("participants") === null){
-    setParticipants()
+    setParticipants();
   } 
     const db = JSON.parse(localStorage.getItem("participants"));
-    db.push({name: name, email: email, phone: phone})
-    localStorage.setItem("participants", JSON.stringify(db))
+    db.push({name: name, email: email, phone: phone});
+    localStorage.setItem("participants", JSON.stringify(db));
+    alert("You've been registered!");
+
 }

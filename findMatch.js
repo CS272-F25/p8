@@ -27,14 +27,21 @@ function generateMatch(){
 function createMatchContainer(match){
     let matchContainer = document.createElement("div");
     matchContainer.className = "card";
-    let matchName = document.createElement("p");
-    let cardText = document.createElement("p");
+    matchContainer.style = "width:35%";
+    let cardText = document.createElement("h2");
+    let matchInfo = document.createElement("h2");
+    let goldenCurl = document.createElement("img");
 
-    matchName.innerText = match.name;
     cardText.innerText = "Here is Your Match";
+    matchInfo.innerText = `Match: ${match.name}\nEmail: ${match.email}\nPhone Number: ${match.phone}`;
+
+    goldenCurl.className = "curl left"
+    goldenCurl.alt = "golden curls decoration for generated match"
+    goldenCurl.src = "./images/goldencurls.png"
 
     matchContainer.appendChild(cardText);
-    matchContainer.appendChild(matchName);
+    matchContainer.appendChild(matchInfo);
+    matchContainer.appendChild(goldenCurl);
 
     document.getElementById("match").innerText = "";
     document.getElementById("match").appendChild(matchContainer);
