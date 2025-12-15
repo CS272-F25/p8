@@ -1,5 +1,5 @@
-function returnParticipants(){
-  if(localStorage.getItem("participants")){
+function setParticipants(){
+  if(localStorage.getItem("participants") !== null){
     console.log("participants has been set");
   } else {
     localStorage.setItem("participants", JSON.stringify([
@@ -34,4 +34,13 @@ function returnParticipants(){
       { name: "Charlotte Cooper", email: "charlotte.cooper@wisc.edu", phone: "608-129-0029" },
       { name: "Daniel Bailey", email: "daniel.bailey@wisc.edu", phone: "608-130-0030" }
     ]));}
+}
+
+function addParticipant(name, email, phone){
+  if(localStorage.getItem("participants") === null){
+    setParticipants()
+  } 
+    const db = JSON.parse(localStorage.getItem("participants"));
+    db.push({name: name, email: email, phone: phone})
+    localStorage.setItem("participants", JSON.stringify(db))
 }
