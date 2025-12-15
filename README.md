@@ -47,6 +47,7 @@ The project emphasizes ease of use, playfullness, and thoughtful interaction so 
 * **Bootstrap 4** for layout and navigation
 * **Google Fonts** for festive and readable typography
 * **JavaScript** for interactivity and dynamic features
+* **Images** from this website: https://www.flaticon.com/search?word=elf&type=sticker 
 
 The design focuses on a warm, holiday-inspired aesthetic using playful visuals, clear layout, and accessible navigation.
 
