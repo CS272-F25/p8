@@ -1,120 +1,264 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Trocchi&family=Roboto&display=swap" rel="stylesheet">
-        <link rel = "stylesheet" href = "styles.css" />
-        <title>Contact Us</title>
-    </head>
-    <body>
-        <header>
-            <div class = "heading-wrapper">
-                <img src="images/goldencurls.png" class="curl left" alt="golden curls decorations for headings">
-                    <h1>Contact Us</h1>
-                <img src="images/goldencurls.png" class="curl right" alt="golden curls decorations for headings">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap 4 -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  >
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Trocchi&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Contact Us</title>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="heading-wrapper">
+      <img src="images/holly.png" class="curl holly left" alt="holly decoration">
+      <img src="images/goldencurls.png" class="curl left" alt="golden curls decoration">
+
+      <h1>Contact Us</h1>
+
+      <img src="images/goldencurls.png" class="curl right" alt="golden curls decoration">
+      <img src="images/holly.png" class="curl holly right" alt="holly decoration">
+    </div>
+
+    <nav class="navbar" role="navigation">
+      <div class="container-fluid">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="generateMatch.html">Match Me</a>
+        <a href="giftIdeas.html">Gift Ideas</a>
+        <a href="scavenger.html">Present Hunt</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="container my-5">
+
+    <!-- Intro + Image -->
+    <section class="contact-intro mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h2>Get in Touch with the Secret Santa Team!</h2>
+          <p>
+            Have questions, need help, or want to share feedback?
+            We would love to hear from you. Whether you are experiencing an issue,
+            have a suggestion for improving the site, or just want to learn more
+            about how Secret Santa Matcher works, please fill out the form below
+            and a member of our team will get back to you as soon as possible.
+          </p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <img
+            src="images/santa_and_snowman.png"
+            alt="Santa and snowman waving"
+            class="img-fluid"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="mb-5">
+      <div class="row">
+        <div class="col-md-7 col-lg-6">
+
+          <form id="contact-form">
+
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" class="form-control" required>
             </div>
-            <nav role="navigation" class="navbar">
-                <div class="container-fluid">
-                    <a href = "index.html">Home</a>
-                    <a href = "register.html">Register</a>
-                    <a href = "generateMatch.html">Match Me</a>
-                    <a href = "giftIdeas.html">Gift Ideas</a>
-                    <a href = "scavenger.html">Present Hunt</a>
-                    <a href = "aboutus.html">About Us</a>
-                    <a href = "contact.html">Contact Us</a>
-                </div>
-            </nav>
-        </header>
 
-        <main>
-            <img src = "images/santa_and_snowman.png" alt = "Santa and snowman being buddies and waving hi" class = "float-right">
-            <h2>Get in Touch with the Secret Santa Team!</h2> <!-- Title for the Contact Section -->
-            <h4>Have questions, need help, or want to share feedback? We'd love to hear from you. Please fill out the form below to reach us.</h4>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
 
-            <form id="contact-form">
-                <label for="name">Name*</label><br />
-                <input type="text" id="name" name="name" required /><br /><br />
-
-                <label for="email">Email*</label><br />
-                <input type="email" id="email" name="email" required /><br /><br />
-
-                <label for="subject">Subject</label><br />
-                <select id="subject" name="subject">
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" class="form-control">
                 <option value="general">General Question</option>
                 <option value="issue">Report an Issue</option>
                 <option value="feature">Feature Request</option>
                 <option value="feedback">Feedback</option>
-                </select>
-                <br /><br />
-
-                <label for="message">Message*</label><br />
-                <textarea id="message" name="message" rows="4" required></textarea><br /><br />
-
-                <button class="btn btn-primary"type="submit">Send Message</button>
-
-                <p id="form-status"></p>
-            </form>
-            <img src = "images/sparkles.png" alt = "sparkles decoration" class = "float-right">
-        </main>
-
-        <!-- FAQ Section -->
-        <h2 class="text-center mb-3">Frequently Asked Questions</h2>
-            <div id="faqAccordion" class="accordion">
-                <div class="card">
-                      <div class="card-header" id="faq1">
-                        <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                    What if I forget my login?
-                        </button>
-                        </h5>
-                </div>
-            <div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent="#faqAccordion">
-                <div class="card-body">
-                    You can reset your password by clicking “Forgot Password” on the login page and following the instructions.
-                </div>
-            </div>
+              </select>
             </div>
 
-            <div class="card">
-                <div class="card-header" id="faq2">
-                    <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                    Can I change my gift preferences after registering?
-                    </button>
-                    </h5>
-                </div>
-                <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
-                    <div class="card-body">
-                        Yes! Just log in and update your preferences before the match generation date.
-                    </div>
-                </div>
-    </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="form-control"
+                required
+              ></textarea>
+            </div>
 
-    <div class="card">
-        <div class="card-header" id="faq3">
-            <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                    How do I know who my Secret Santa is?
-                </button>
-            </h5>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </div>
+
+            <p id="form-status" class="mt-3"></p>
+
+          </form>
         </div>
-        <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
-            <div class="card-body">
-                After matches are generated, participants will receive an email notification with their assigned recipient.
-            </div>
+        <div class="col-md-5 col-lg-4 text-center ml-n3">
+            <img
+                src="images/reindeer.png"
+                alt="reindeer sitting on a couch drinking hot cocoa with Christmas decorations around it"
+                class="img-fluid"
+            >
         </div>
-    </div>
-</div>
-        
+        <div class="col-12 text-right" style="margin-top: -20rem;">
+            <img
+               src="images/sparkles.png"
+               alt="sparkles decoration"
+            >
+        </div>
+      </div>
+    </section>
+   
+ <!-- FAQ Section -->
+<section aria-labelledby="faq-heading" class="mb-5">
+  <h2 id="faq-heading" class="text-center mb-4">
+    Frequently Asked Questions
+  </h2>
 
-        <footer>
-            &copy;<Span><script type="text/JavaScript">document.write(new Date().getFullYear());</script></Span>
-            COMPSCI/LIS 472 Group Project. All Rights Reserved.
-            <br>
-            <br>
-            Lance Munson | Manato Ogawa | Rachel Ren | Hani Sulieman
-        </footer>
-    </body>
+  <div class="row justify-content-center">
+    <div class="col-md-9 col-lg-7">
+
+      <div id="faqAccordion" class="accordion">
+
+        <article class="card mb-2">
+          <div class="card-header py-2" id="faq1">
+            <h3 class="mb-0">
+              <button
+                class="btn btn-link w-100 text-left py-1"
+                data-toggle="collapse"
+                data-target="#collapse1"
+                aria-expanded="true"
+                aria-controls="collapse1"
+              >
+                What if I forget my login?
+              </button>
+            </h3>
+          </div>
+
+          <div
+            id="collapse1"
+            class="collapse"
+            aria-labelledby="faq1"
+            data-parent="#faqAccordion"
+          >
+            <div class="card-body py-2">
+              You can reset your password by clicking “Forgot Password” on the login page.
+            </div>
+          </div>
+        </article>
+
+        <article class="card mb-2">
+          <div class="card-header py-2" id="faq2">
+            <h3 class="mb-0">
+              <button
+                class="btn btn-link w-100 text-left py-1 collapsed"
+                data-toggle="collapse"
+                data-target="#collapse2"
+                aria-expanded="false"
+                aria-controls="collapse2"
+              >
+                Can I change my gift preferences after registering?
+              </button>
+            </h3>
+          </div>
+
+          <div
+            id="collapse2"
+            class="collapse"
+            aria-labelledby="faq2"
+            data-parent="#faqAccordion"
+          >
+            <div class="card-body py-2">
+              Yes! You can update your preferences before the match generation date.
+            </div>
+          </div>
+        </article>
+
+        <article class="card mb-2">
+          <div class="card-header py-2" id="faq3">
+            <h3 class="mb-0">
+              <button
+                class="btn btn-link w-100 text-left py-1 collapsed"
+                data-toggle="collapse"
+                data-target="#collapse3"
+                aria-expanded="false"
+                aria-controls="collapse3"
+              >
+                How do I know who my Secret Santa is?
+              </button>
+            </h3>
+          </div>
+
+          <div
+            id="collapse3"
+            class="collapse"
+            aria-labelledby="faq3"
+            data-parent="#faqAccordion"
+          >
+            <div class="card-body py-2">
+              Participants will receive an email after matches are generated.
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    &copy;
+    <span>
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </span>
+    COMPSCI/LIS 472 Group Project. All Rights Reserved.
+    <br><br>
+    Lance Munson | Manato Ogawa | Rachel Ren | Hani Sulieman
+  </footer>
+
+</body>
 </html>

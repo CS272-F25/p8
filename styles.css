@@ -170,4 +170,30 @@ p, li, label {
   font-family: 'Roboto', Arial, sans-serif;
   
 }
+.contact-intro h2 {
+  margin-bottom: 0.5rem; /* smaller gap */
+}
 
+.contact-intro p {
+  margin-top: 0;
+}
+
+#contact-form label {
+  font-family: 'Trocchi', serif;
+  font-weight: 600;
+}
+
+/* Input text matches body paragraphs */
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Make FAQ buttons wrap text properly */
+#faqAccordion .btn-link {
+  white-space: normal;        /* allow wrapping */
+  text-align: center;         /* keep it centered */
+  width: 100%;                /* fill the card */
+  padding: 1rem 1.25rem;
+}
