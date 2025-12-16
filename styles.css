@@ -203,3 +203,39 @@ p, li, label {
 main {
   flex: 1;
 }
+
+.scavenger-banner {
+  text-align: center;
+  background-color: #cfeeee; /* optional: matches your page background */
+  padding: 10px 0;
+}
+
+.scavenger-banner img {
+  width: 100%;
+  max-width: 900px;   /* controls how small it is */
+  height: auto;       /* keeps original proportions */
+  object-fit: contain; /* ensures NO cropping */
+  display: inline-block;
+}
+
+.register-gif {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.register-gif img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+.match-image {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.match-image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
